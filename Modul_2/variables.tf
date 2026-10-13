@@ -23,5 +23,5 @@ variable "project" {
 variable "location" {
   description = "Azure-region for ressursene"
   type        = string
-  default     = "<din tillatte region>"   # eller overstyr i terraform.tfvars
+  default     = "<din tillatte region>" # eller overstyr i terraform.tfvars
 }
