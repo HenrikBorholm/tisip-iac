@@ -17,6 +17,10 @@ permissions:
   contents: read
   pull-requests: write   # for å poste planen tilbake i PR-en
 
+concurrency:
+  group: terraform-modul7-${{ github.ref }}
+  cancel-in-progress: false
+
 defaults:
   run:
     working-directory: modul7     # her bor Terraform-rota
