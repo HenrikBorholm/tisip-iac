@@ -23,5 +23,5 @@ module "network" {
   project             = var.project
   location            = var.location
   resource_group_name = azurerm_resource_group.main.name
-  student_id = var.student_id
+  student_id          = var.student_id
 }
