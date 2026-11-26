@@ -18,9 +18,10 @@ resource "azurerm_resource_group" "main" {
 }
 
 module "network" {
-  source              = "./modules/network"
+  source = "git::https://github.com/HenrikBorholm/tisip-iac.git//modules/network?ref=network-v1.1.0"
+
   project             = var.project
   location            = var.location
   resource_group_name = azurerm_resource_group.main.name
-  student_id          = var.student_id
+  student_id = var.student_id
 }
